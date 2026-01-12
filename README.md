@@ -42,7 +42,7 @@ Request:
 
 Response:
 {
-  "shortUrl":"http://localhost:8080/v7JUOsT"
+  "shortUrl":"http://localhost:8080/{shortCode}"
 }
 
 ---
