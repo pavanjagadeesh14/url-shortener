@@ -50,8 +50,9 @@ Response:
 ### Redirect URL
 GET /{shortCode}
 
-Example:
-http://localhost:8080/abc123
+Example (when app is running locally):
+http://localhost:8080/{shortCode}
+
 
 ---
 
