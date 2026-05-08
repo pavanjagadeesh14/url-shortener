@@ -15,7 +15,7 @@ This project demonstrates real-world backend development practices used in produ
 - DTO validation
 - Global exception handling
 - Swagger API documentation
-- Redis caching added for performance optimization
+- Performance optimized using Redis caching
 
 ---
 
