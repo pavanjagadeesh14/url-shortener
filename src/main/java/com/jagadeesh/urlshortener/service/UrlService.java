@@ -4,6 +4,7 @@ import com.jagadeesh.urlshortener.model.UrlMapping;
 import com.jagadeesh.urlshortener.repository.UrlMappingRepository;
 import com.jagadeesh.urlshortener.util.Base62Encoder;
 import org.springframework.stereotype.Service;
+import org.springframework.cache.annotation.Cacheable;
 
 import java.time.LocalDateTime;
 
@@ -16,6 +17,7 @@ public class UrlService {
         this.repository = repository;
     }
 
+    @Cacheable(value = "urls", key = "#shortCode")
     public String getOriginalUrl(String shortCode) {
 
         UrlMapping mapping = repository.findByShortCode(shortCode)
